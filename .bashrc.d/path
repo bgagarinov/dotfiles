@@ -1,0 +1,18 @@
+PATH=$HOME/bin:$PATH
+PATH=$HOME/bin/excluded:$PATH
+PATH=$HOME/bin/remotecopy:$PATH
+PATH=$HOME/bin/git-subtree:$PATH
+PATH=$HOME/.bashrc.d/resty:$PATH
+
+export PATH
+
+function vipath() {
+    TMP=`mktemp -t tmp.XXXXXXXXX`;
+    editpath $1 2> $TMP;
+    if [ "$?" -ne 0 ]; then
+        cat $TMP;
+    else
+        source $TMP
+    fi
+    rm -f $TMP
+}
