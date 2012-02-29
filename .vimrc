@@ -28,7 +28,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-set langmap=ÊÃÕËÅÎÇÛÝÚÈ‗ÆÙ×ÁÐÒÏÌÄÖÜÑÞÓÍÉÔØÂÀךדץכוHחû‎תטÿזשקבנעןלהצüס‏ףםיפרגא;qwertyuiop[]asdfghjkl;'zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
+set langmap=ÊÃÕËÅÎÇÛÝÚÈ‗ÆÙ×ÁÐÒÏÌÄÖÜÑÞÓÍÉÔØÂÀךדץכוHחû‎תטÿזשקבנעןלהצüס‏ףםיפרגא;qwertyuiop[]asdfghjkl;'zxcvbnm\\,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
