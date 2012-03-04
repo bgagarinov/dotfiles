@@ -1,0 +1,8 @@
+# check for bash version
+
+# if bash version > 3
+
+# also approved for zsh, i think
+
+. ~/.bash_completion.d/git_completion
+. ~/.bash_completion.d/dfm_completion

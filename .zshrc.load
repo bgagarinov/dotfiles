@@ -1,0 +1,13 @@
+# include what you want
+
+export PATH=$PATH:$HOME/bin
+
+# add this to the .zshrc: . $HOME/.zshrc.load
+
+####
+# put any zsh customizations in here
+
+# not complete yet:
+#. $HOME/.zshrc.d/safe # includes aliases, shell
+#. $HOME/.zshrc.d/wintitle
+. $HOME/.zshrc.d/completion
