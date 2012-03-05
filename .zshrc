@@ -41,7 +41,10 @@ zstyle ':completion:*' verbose yes
 . $HOME/.zshrc.load
 # GIT added:
 #PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
-PS1='%B(er%?)$(__git_ps1 " (%s)") %#%b '
-autoload -U promptinit
-promptinit
-prompt bart green
+#PS1='%B(er%?)$(__git_ps1 " (%s)")[%~] %#%b '
+#PS1='%B(er%?)$(__git_ps1 " (%s)")[%~] %#%b '
+PS1='%B(er%?) [%n@%m:%~]$(__git_ps1 " (%s)") %#%b '
+# Bart prompt:
+# autoload -U promptinit
+# promptinit
+# prompt bart green
