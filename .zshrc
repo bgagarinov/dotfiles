@@ -45,6 +45,6 @@ zstyle ':completion:*' verbose yes
 #PS1='%B(er%?)$(__git_ps1 " (%s)")[%~] %#%b '
 PS1='%B(er%?) [%n@%m:%~]$(__git_ps1 " (%s)") %#%b '
 # Bart prompt:
-# autoload -U promptinit
-# promptinit
-# prompt bart green
+autoload -U promptinit
+promptinit
+prompt bart green
