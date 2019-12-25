@@ -10,4 +10,5 @@ export PATH=$PATH:$HOME/bin
 # not complete yet:
 #. $HOME/.zshrc.d/safe # includes aliases, shell
 #. $HOME/.zshrc.d/wintitle
+. $HOME/.zshrc.d/aliases
 . $HOME/.zshrc.d/completion
