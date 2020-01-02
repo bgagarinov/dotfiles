@@ -11,4 +11,5 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # not complete yet:
 #. $HOME/.zshrc.d/safe # includes aliases, shell
 #. $HOME/.zshrc.d/wintitle
+. $HOME/.zshrc.d/aliases
 . $HOME/.zshrc.d/completion
