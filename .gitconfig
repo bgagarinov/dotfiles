@@ -1,6 +1,6 @@
 [user]
-	email = boris.gagarinov@gmail.com
-	name = "Boris O. Gagarinov"
+	email = b.gagarinov@rsc-tech.ru
+	name = Boris O. Gagarinov
 [color]
     diff = auto
     status = auto
@@ -32,3 +32,10 @@
 
 [core]
 	quotepath = false
+	excludesfile = /Users/basi/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

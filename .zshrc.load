@@ -1,6 +1,7 @@
 # include what you want
 
 export PATH=$PATH:$HOME/bin
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # add this to the .zshrc: . $HOME/.zshrc.load
 

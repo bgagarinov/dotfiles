@@ -10,6 +10,11 @@ setopt AUTO_PUSHD
 setopt AUTO_CD
 setopt PROMPT_SUBST
 
+# 2018-08-28 ~basi docker completion
+fpath=(~/.zsh/completion $fpath)
+#autoload -Uz compinit && compinit -i
+# docker end
+
 zmodload zsh/complist
 autoload -U compinit && compinit
 
@@ -48,3 +53,5 @@ PS1='%B(er%?) [%n@%m:%~]$(__git_ps1 " (%s)") %#%b '
 autoload -U promptinit
 promptinit
 prompt bart green
+
+
