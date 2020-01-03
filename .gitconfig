@@ -29,6 +29,7 @@
     x = "!gitx"
     missing = "!sh -c 'git log ...$0 --format=\"%m %h %s\" --left-right'"
     wl = walklog
+	alias = ! git config --get-regexp ^alias\\.
 
 [core]
 	quotepath = false
