@@ -11,12 +11,21 @@ setopt AUTO_CD
 setopt PROMPT_SUBST
 
 # 2018-08-28 ~basi docker completion
+# Prepare directory:
+# mkdir -p ~/.zsh/completion
 fpath=(~/.zsh/completion $fpath)
+
+# 2020-01-09 ~basi docker application internal completion
+# URL: https://daten-und-bass.io/blog/fixing-docker-command-auto-completion-in-mac-os-catalina/
+# To prepare correct environment use:
+# ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/.zsh/completion/_docker
+# ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion ~/.zsh/completion/_docker-machine
+# ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose
+
 #autoload -Uz compinit && compinit -i
-# docker end
 
 zmodload zsh/complist
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 
 # Below is completion example, stolen from:
 # http://zshwiki.org/home/examples/compquickstart
