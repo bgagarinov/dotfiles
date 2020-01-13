@@ -9,3 +9,7 @@
 
 # k8s kubectl completion autogeneration. ~basi
 source <(kubectl completion zsh)
+
+# pip completion. ~basi
+eval "`pip completion --zsh`"
+compctl -K _pip_completion pip3
