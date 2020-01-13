@@ -1,12 +1,11 @@
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-
+# Use local uncommon environment file if needed
 [ -f $HOME/.Env ] && . $HOME/.Env
 
-# Setting PATH for MacPython 2.6
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
+# Setting PATH for pip environment
+PATH="/Users/boris_gagarinov/Library/Python/2.7/bin":${PATH}
 
 # Setting for iTerm imgcat integration
 PATH="${HOME}/.iterm2:${PATH}"
