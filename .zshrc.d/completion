@@ -11,5 +11,5 @@
 source <(kubectl completion zsh)
 
 # pip completion. ~basi
-eval "`pip completion --zsh`"
+eval "`pip3 -q completion --zsh`"
 compctl -K _pip_completion pip3
