@@ -6,7 +6,8 @@ module.exports = {
       // Open apple.com and example.org urls in Safari
       match: finicky.matchHostnames([
         "epam.com",
-        /.*\.epam.com$/, // match all Epam.com subdomains 
+        /.*\.epam.com$/,      // match all Epam.com subdomains 
+        "epa.ms",             // http://epa.ms/holidays, Telescope shortcut
         "example.org"]),
       browser: "Google Chrome"
     },
