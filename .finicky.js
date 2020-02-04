@@ -8,6 +8,8 @@ module.exports = {
         "epam.com",
         /.*\.epam.com$/,      // match all Epam.com subdomains 
         "epa.ms",             // http://epa.ms/holidays, Telescope shortcut
+        "urldefense.com",     // yammer access
+        /.*\.yammer.com$/,    // yammer access
         "example.org"]),
       browser: "Google Chrome"
     },
