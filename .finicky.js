@@ -7,7 +7,12 @@ module.exports = {
       match: finicky.matchHostnames([
         "epam.com",
         /.*\.epam.com$/,      // match all Epam.com subdomains 
-        "epa.ms",             // http://epa.ms/holidays, Telescope shortcut
+        // http://epa.ms/holidays, Telescope shortcut
+        "epa.ms",
+        // yammer access
+        "urldefense.com",
+        /.*\.yammer.com$/,
+        // example
         "example.org"]),
       browser: "Google Chrome"
     },
