@@ -12,6 +12,8 @@ module.exports = {
         // yammer access
         "urldefense.com",
         /.*\.yammer.com$/,
+        "contactmonkey.com", // EPAM digests with that
+        /.*\.contactmonkey.com\/api$/,
         // example
         "example.org"]),
       browser: "Google Chrome"
