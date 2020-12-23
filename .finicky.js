@@ -1,6 +1,7 @@
 // Based on example from https://github.com/johnste/finicky
 module.exports = {
-  defaultBrowser: "Safari",
+  // defaultBrowser was: "Safari"
+  defaultBrowser: "Firefox",
   handlers: [
     {
       // Open apple.com and example.org urls in Safari
@@ -19,9 +20,16 @@ module.exports = {
       browser: "Google Chrome"
     },
     {
-      // Open any url including the string "workplace" in Firefox
+      match: finicky.matchHostnames([
+        // docs.google.com
+        "docs.google.com", /.*\.docs.google.com$/
+      ]),
+      browser: "Safari"
+    },
+    {
+      // Open any url including the string "workplace" in Safari:
       match: /workplace/,
-      browser: "Firefox"
+      browser: "Safari"
     }
   ]
 };
